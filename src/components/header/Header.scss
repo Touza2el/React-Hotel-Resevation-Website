@@ -1,0 +1,126 @@
+.header-component {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.fix-header {
+  position: fixed !important;
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.35);
+  width: 100%;
+  z-index: 200;
+  animation-name: headerAnimation;
+  animation-duration: 1.5s;
+  .header-content {
+    .header-logo {
+      a {
+        padding: 15px 0;
+      }
+    }
+  }
+}
+@keyframes headerAnimation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 50px;
+  a {
+    display: block;
+    padding: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.header-links {
+  display: flex;
+  li {
+    a {
+      margin-right: 15px;
+      color: #444;
+      font-size: 14px;
+      font-family: 'open sans';
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: coral;
+      }
+    }
+  }
+}
+.header-btn {
+  button {
+    margin-left: 15px;
+    padding: 7px 15px;
+    color: #fff;
+    background-color: coral;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      background-color: rgb(250, 103, 50);
+    }
+  }
+}
+.mobile-menu {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+// Header Component Media Queries
+
+@media (max-width: 768px) {
+  .header-btn {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .header-component {
+    position: relative;
+  }
+  .header-content {
+    justify-content: space-between;
+  }
+  .header-links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 100%);
+    width: 50%;
+    height: 100vh;
+    background-color: #eee;
+    flex-direction: column;
+    transition: all 0.6s ease-in-out;
+    li {
+      a {
+        display: block;
+        margin: 0;
+        padding: 20px;
+        color: #272727;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background-color: #ddd;
+        }
+      }
+    }
+  }
+  .header-links.active {
+    transform: translate(0%, 100%);
+  }
+  .mobile-menu {
+    display: block;
+  }
+}

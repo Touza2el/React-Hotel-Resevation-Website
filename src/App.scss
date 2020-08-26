@@ -1,0 +1,41 @@
+// Start Variables
+$black-color: #272727;
+// End Variables
+
+// Start General Styling
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  margin: auto;
+  width: 85%;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $black-color;
+  text-transform: capitalize;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: $black-color;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+button {
+  border: none;
+  text-transform: capitalize;
+  cursor: pointer;
+  outline: none;
+}
+
+// End General Styling
