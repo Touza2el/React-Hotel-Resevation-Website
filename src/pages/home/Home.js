@@ -5,7 +5,6 @@ function Home() {
   return (
     <div className='home-page'>
       <Hero title='get comfortable room' btnText='our rooms' link='/rooms' />
-      <div className='test-section'></div>
     </div>
   );
 }
