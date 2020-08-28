@@ -37,7 +37,15 @@
     margin-bottom: 4%;
   }
 }
+@media (max-width: 768px) {
+  .services-component {
+    padding: 80px 0;
+  }
+}
 @media (max-width: 540px) {
+  .services-component {
+    padding: 50px 0;
+  }
   .services-item {
     margin-bottom: 4%;
     padding: 20px;
