@@ -1,0 +1,40 @@
+.new-rooms-component {
+  margin-bottom: 80px;
+}
+.new-rooms-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.new-rooms-item {
+  margin-bottom: 2.2%;
+  width: 31.7%;
+}
+.new-rooms-image {
+  border: 2px solid #eee;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+// New-rooms-component Media queries
+
+@media (max-width: 768px) {
+  .new-rooms-component {
+    margin-bottom: 50px;
+  }
+  .new-rooms-item {
+    margin-bottom: 3.4%;
+    width: 48%;
+  }
+}
+@media (max-width: 540px) {
+  .new-rooms-component {
+    margin-bottom: 50px;
+  }
+  .new-rooms-item {
+    margin-bottom: 5%;
+    width: 100%;
+  }
+}
