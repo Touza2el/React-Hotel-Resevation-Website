@@ -3,3 +3,29 @@
     background-image: url(../../images/home-hero-image.jpg);
   }
 }
+.banner-section {
+  height: 100vh;
+  background-image: url(../../images/hotel-night.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: #fff;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
+}
+.banner-section.second {
+  background-image: url(../../images/water-hotel.jpg);
+  h1 {
+    border-bottom: 10px solid #fff;
+  }
+}
